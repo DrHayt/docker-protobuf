@@ -5,3 +5,6 @@ find $GOPATH/src/golang.sgpdev.com/conduit/models -type f -name \*.pb.go | xargs
 
 find sgt 	-type f -name \*.proto | xargs -n 1 protoc --go_out=$GOPATH/src
 find services	-type f -name \*.proto | xargs -n 1 protoc --go_out=plugins=grpc:$GOPATH/src
+
+cd /go/src/golang.sgpdev.com/conduit/models 
+go generate ./...

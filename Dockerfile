@@ -24,6 +24,8 @@ RUN mkdir -p $OUTDIR/usr/bin && \
         github.com/johanbrandhorst/protobuf/protoc-gen-gopherjs \
         github.com/ckaznocha/protoc-gen-lint \
         github.com/mwitkow/go-proto-validators/protoc-gen-govalidators \
+	github.com/matryer/moq \
+	github.com/google/wire/cmd/wire \
         moul.io/protoc-gen-gotemplate
 
 RUN mkdir -p /usr/include/google/api && \
