@@ -10,6 +10,7 @@ find sgt 	-type f -name \*.proto | xargs -n 1 protoc --go_out=$GOPATH/src --auto
 find services	-type f -name \*.proto | xargs -n 1 protoc --go_out=plugins=grpc:$GOPATH/src
 find services	-type f -name \*.proto | xargs -n 1 protoc --autocacher_out=$GOPATH/src
 find services	-type f -name \*.proto | xargs -n 1 protoc --client_out=$GOPATH/src
+find services	-type f -name \*.proto | xargs -n 1 protoc --proxy_out=$GOPATH/src
 
 if [ -d $THEDIR ];then
     cd $BASEDIR && dep ensure --vendor-only

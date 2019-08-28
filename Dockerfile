@@ -36,6 +36,7 @@ RUN mkdir -p $OUTDIR/usr/bin && \
         moul.io/protoc-gen-gotemplate \
 	golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-autocacher \
 	golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-client \
+	golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-proxy \
 	github.com/gobuffalo/packr/v2/packr2 \
 	github.com/golang/dep/cmd/dep && \
         cd $GOPATH/src/golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-autocacher && packr2 install && \
