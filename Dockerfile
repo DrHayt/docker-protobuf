@@ -41,6 +41,7 @@ RUN mkdir -p $OUTDIR/usr/bin && \
 	github.com/golang/dep/cmd/dep && \
         cd $GOPATH/src/golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-autocacher && packr2 install && \
         cd $GOPATH/src/golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-client && packr2 install && \
+        cd $GOPATH/src/golang.sgpdev.com/conduit/utilities/buildtools/protoc-gen-proxy && packr2 install && \
 	rm /root/.git-credentials
 
 RUN mkdir -p /usr/include/google/api && \
