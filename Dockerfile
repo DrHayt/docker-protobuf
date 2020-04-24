@@ -20,7 +20,7 @@ RUN mkdir -p $OUTDIR/usr/bin && \
 	echo $CREDS | base64 -d > /root/.git-credentials && \
 	go get -u -v -ldflags '-w -s' \
         github.com/Masterminds/glide \
-        github.com/golang/protobuf/protoc-gen-go \
+        github.com/golang/protobuf/protoc-gen-go@v1.3.4 \
         github.com/gogo/protobuf/protoc-gen-gofast \
         github.com/gogo/protobuf/protoc-gen-gogo \
         github.com/gogo/protobuf/protoc-gen-gogofast \
